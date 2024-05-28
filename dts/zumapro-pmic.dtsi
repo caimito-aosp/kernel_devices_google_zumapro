@@ -238,9 +238,9 @@
 	rail-name = "LDO21S";
 };
 
-// Request from b/331556280
+// Request from b/331556280 and b/342976647
 &ch17 {
-	rail-name = "BUCK7S";
+	rail-name = "LDO22S";
 };
 
 &ch20 {
