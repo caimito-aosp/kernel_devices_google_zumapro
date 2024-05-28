@@ -27,15 +27,15 @@
 				mid_mpmm_settings = <0x1AA>;
 				big_mpmm_settings = <0x6>;
 				mpmm_en = <0x1f0>;
-				tpu_con_heavy = <0xfff041c3>;
+				tpu_con_heavy = <0xfff041c1>;
 				tpu_con_light = <0xfff041c1>;
-				tpu_clkdivstep = <0x1>;
-				gpu_con_heavy = <0xfff04385>;
+				tpu_clkdivstep = <0x41>;
+				gpu_con_heavy = <0xfff04381>;
 				gpu_con_light = <0xfff041c1>;
-				gpu_clkdivstep = <0x1>;
-				cpu2_clkdivstep = <0x1>;
-				cpu1_clkdivstep = <0x1>;
-				cpu0_clkdivstep = <0x1>;
+				gpu_clkdivstep = <0x41>;
+				cpu2_clkdivstep = <0x41>;
+				cpu1_clkdivstep = <0x41>;
+				cpu0_clkdivstep = <0x41>;
 				aur_clkdivstep = <0x1>;
 				batoilo_lower = <1800>;
 				batoilo_upper = <8000>;
@@ -60,6 +60,7 @@
 				cpu0_cluster = <0>;
 				cpu1_cluster = <4>;
 				cpu2_cluster = <7>;
+				smpl_ctrl = <0x8F>; /* 3.0V, 200mV HYS, 158us Debounce */
 				odpm_ratio = <3>;
 				non_monitored_module_ids = <AUDIO_MITIGATION_ID HAPTICS_MITIGATION_ID>;
 
@@ -219,11 +220,11 @@
 						tpu = <845000>;
 					};
 					smpl_warn {
-						cpucl0 = <1328000>;
-						cpucl1 = <1328000>;
-						cpucl2 = <1396000>;
-						gpu = <419000>;
-						tpu = <627000>;
+						cpucl0 = <1696000>;
+						cpucl1 = <2130000>;
+						cpucl2 = <2499000>;
+						gpu = <723000>;
+						tpu = <845000>;
 					};
 				};
 			};
